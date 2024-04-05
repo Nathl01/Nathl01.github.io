@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nathalia France</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Nathalia France</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Foto do perfil de Nathalia France">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Olá, meu nome é</p>
+            <h1 class="title">Nathalia France</h1>
+            <p class="section__text__p2">Desenvolvedora Frontend </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Meu perfil Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/nathalia-f-56124024b/'">
+                <img src="./assets/github.png" alt="Meu perfil Github" class="icon" onclick="location.href='https://github.com/Nathl01'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Saiba mais</p>
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg" alt="Foto de Perfil" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/skills.png" alt="Skills icon" class="icon">
+                        <h3>Soft Skills</h3>
+                        <p>Comunicação<br>Inteligência Emocional<br>Trabalho em Equipe</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Educação</h3>
+                        <p>Instituto Infnet<br>Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Olá! Me chamo Nathalia, tenho 20 anos e sou apaixonada por desenvolvimento web.
+                        Amo ver a mágica acontecer, transformando linhas de código em interfaces intuitivas, visualmente atraentes e fáceis de usar.
+                        A liberdade que essa área oferece me permite ir além do esperado, criando soluções inovadoras e que superam expectativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore Minhas</p>
+        <h1 class="title">Habilidades</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Desenvolvimento Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>UI Design</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Idiomas</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>Inglês</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>Espanhol</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+                            <div>
+                                <h3>Italiano</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Navegue pelos meus</p>
+        <h1 class="title">Projetos</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="project 1" class="project-img" />
+                </div>
+                <h2 class="skills-sub-title project-title">Projeto Um</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="project 2" class="project-img" />
+                </div>
+                <h2 class="skills-sub-title project-title">Projeto Dois</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="project 3" class="project-img" />
+                </div>
+                <h2 class="skills-sub-title project-title">Projeto Três</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nathl01'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Entre em contato</p>
+        <h1 class="title">Comigo</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:nathaliafrance1@gmail.com">nathaliafrance1@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/nathalia-f-56124024b/">Nathalia France</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nathalia France. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
